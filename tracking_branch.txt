@@ -1,0 +1,30 @@
+Making Tracking Branch
+
+1.リモートブランチを追跡する（tracking branch）を作成する
+
+$git branch [branch] [remotename]/[branch]
+
+$git checkout -b [branch] [remotename]/[branch]
+
+2.remote repository の　branch を　local repository に取り込む
+
+2-1.confirm tracking branch
+
+$git branch -r
+
+2-2.makke tracking branch from remote branch
+
+$git fetch origin myBranch
+
+2-3.confirm
+
+$git branch -r
+	origin/myBranch
+
+2-4.make local branch from tracking  branch
+
+$git checkout myBranch
+
+** myBranch(local branch) made in local repository
+
+
